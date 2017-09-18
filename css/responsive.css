@@ -4,6 +4,9 @@
 	}
 	.cv-story {
 		width: auto;
-		padding: 0 25px;
+		padding: 0 15px;
+	}
+	.cv-story .repeater {
+		padding-left: 0;
 	}
 }
