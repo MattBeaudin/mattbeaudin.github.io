@@ -1,0 +1,9 @@
+@media (max-width: 1060px) {
+	html, body {
+		min-width: 0;
+	}
+	.cv-story {
+		width: auto;
+		padding: 0 25px;
+	}
+}
