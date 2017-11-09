@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./css/all.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -354,16 +356,27 @@
             </div>
           </div>
         </div>
-      </div><!--
+      </div>
       <div class="section cv-section-type hide-for-pdf">
         <div class="section-header section-opener">
           <h2>Work Showcase</h2>
         </div>
         <div class="tag-section repeater work-showcase frontend">
-          <h3>Frontend</h3>
+          <h3>Associate Connection - Morley Intranet</h3>
+          <div id="front-end-slider">
+            <img src="./images/showcase/ac-1.png">
+            <img src="./images/showcase/ac-2.png">
+            <img src="./images/showcase/ac-3.png">
+            <img src="./images/showcase/ac-4.png">
+            <img src="./images/showcase/ac-5.png">
+            <img src="./images/showcase/ac-6.png">
+          </div>
         </div>
-      </div>-->
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91187449-1"></script>
     <script>
     	console.log("Hire me, https://www.linkedin.com/in/matt-beaudin/");
@@ -374,6 +387,13 @@
 
     		gtag('config', 'UA-91187449-1');
   		}
+    </script>
+    <script>
+      $(function() {
+        $('#front-end-slider').slick({
+          dots: true
+        });
+      });
     </script>
   </body>
 </html>

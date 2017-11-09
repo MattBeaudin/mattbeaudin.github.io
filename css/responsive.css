@@ -10,6 +10,10 @@
 	.cv-story .tag-section.repeater {
 		padding-left: 0;
 	}
+	.tag-section.repeater.work-showcase.frontend {
+		padding-left: 30px;
+		padding-right: 60px;
+	}
 }
 /* Disable both when converting to PDF */
 @media (max-width: 780px) {
