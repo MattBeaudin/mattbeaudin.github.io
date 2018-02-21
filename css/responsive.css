@@ -15,14 +15,20 @@
 		padding-right: 60px;
 	}
 }
-/* Disable both when converting to PDF */
+
 @media (max-width: 780px) {
+	body.pdf .cv-story .col-4 {
+		width: 33.33333333%;
+	}
 	.cv-story .col-4 {
 		width: 50%;
 	}
 }
 
 @media (max-width: 550px) {
+	body.pdf .cv-story .col-4 {
+		width: 33.33333333%;
+	}
 	.cv-story .col-4 {
 		width: 100%;
 	}
