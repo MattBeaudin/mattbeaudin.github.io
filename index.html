@@ -332,16 +332,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91187449-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
     <script>
-    	console.log("Hire me, https://www.linkedin.com/in/matt-beaudin/");
-  		if (window.location.hash !== "#dev") {
-			window.dataLayer = window.dataLayer || [];
-    		function gtag(){dataLayer.push(arguments)};
-    		gtag('js', new Date());
+      console.log("Hire me, https://www.linkedin.com/in/matt-beaudin/");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    		gtag('config', 'UA-91187449-1');
-  		}
+      gtag('config', 'GA_TRACKING_ID');
     </script>
   </body>
 </html>
