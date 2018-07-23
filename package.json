@@ -2,12 +2,14 @@
   "name": "mattbeaudin.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gitname.github.io/react-gh-pages",
+  "homepage": "http://mattbeaudin.github.io/",
   "dependencies": {
+    "bootstrap": "^4.1.2",
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
