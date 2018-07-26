@@ -2,10 +2,6 @@ import * as React from "react";
 import WorkExperience from "./WorkExperience";
 
 export default class WorkExperienceList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 		var experienceList = [
 			{

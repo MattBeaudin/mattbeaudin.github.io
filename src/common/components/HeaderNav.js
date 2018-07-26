@@ -21,16 +21,16 @@ export default class HeaderNav extends React.Component {
         return(
             <Navbar color="dark" dark expand="sm">
                 <Container inNavbar>
-                    <NavbarBrand href="/">Brand</NavbarBrand>
+                    <NavbarBrand href="/">matthewbeaud.in</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNav} />
 
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                                <NavLink href="https://www.linkedin.com/in/matt-beaudin/">LinkedIn</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/mattbeaudin/">GitHub</NavLink>
+                                <NavLink href="https://github.com/mattbeaudin">GitHub</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
