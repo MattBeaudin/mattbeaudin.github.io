@@ -31,10 +31,10 @@
 <body>
   <div class="timeline-public">
     <div class="timeline-public-header">
-      <a href="https://github.com/MattBeaudin"><i class="fa fa-git-square" aria-hidden="true"></i></a>
-      <a href="https://stackoverflow.com/users/story/6928655"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/matt-beaudin/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a target="_blank" href="MatthewBeaudin-Resume.pdf" class="btn-secondary print-btn">
+      <a data-ga="github" href="https://github.com/MattBeaudin"><i class="fa fa-git-square" aria-hidden="true"></i></a>
+      <a data-ga="stack overflow" href="https://stackoverflow.com/users/story/6928655"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+      <a data-ga="linkedin" href="https://www.linkedin.com/in/matt-beaudin/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a data-ga="resume" target="_blank" href="MatthewBeaudin-Resume.pdf" class="btn-secondary print-btn">
         <span class="icon-print"></span>
         PDF
       </a>
@@ -341,8 +341,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
-    <script>
+    <script type="text/javascript">
       console.log("Hire me, https://www.linkedin.com/in/matt-beaudin/");
+      $(".timeline-public-header > a").on("click", function() {
+        ga("send", "event", "Header Link", "click", $(this).attr("data-ga"));
+      });
     </script>
   </body>
 </html>
