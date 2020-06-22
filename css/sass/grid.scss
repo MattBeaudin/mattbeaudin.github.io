@@ -1,0 +1,50 @@
+section {
+    padding: 30px 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@each $breakpoint in $grid-breakpoints {
+    $name: nth($breakpoint, 1);
+    $size: nth($breakpoint, 2);
+    $container: nth($breakpoint, 3);
+    @media only screen and (min-width: $size) {
+        .container {
+            width: $container;
+        }
+        .col-#{$name} {
+            flex-grow: 1;
+            flex-basis: 0;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        @for $i from 1 through $grid-columns {
+            .col-#{$name}-#{$i} {
+                flex-basis: 100% / $grid-columns * $i;
+                max-width: 100% / $grid-columns * $i;
+                padding: 0 15px;
+            }
+        }
+        @for $i from 1 through $grid-columns {
+            .col-#{$name}-off-#{$i} {
+                //@include flexboxgrid-sass-col-common;
+                margin-left: 100% / $grid-columns * $i;
+            }
+        }
+    }
+}

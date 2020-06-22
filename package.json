@@ -1,0 +1,18 @@
+{
+  "name": "mattbeaudin.github.io",
+  "version": "2.0.0",
+  "description": "Personal online portfolio/resume website that makes me seem competent.",
+  "repository": "https://github.com/mattbeaudin/mattbeaudin.github.io.git",
+  "author": "Matthew Beaudin",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "sass --watch css/style.scss:css/style.css --style compressed",
+    "build": "sass css/style.scss:css/style.css --style compressed",
+    "live": "live-server --port=8000 --no-browser"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.26.8"
+  }
+}
