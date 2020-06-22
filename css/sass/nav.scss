@@ -12,7 +12,7 @@ nav {
 		font-weight: $navbar-link-weight;
 		height: $navbar-height;
 		list-style: none;
-		padding: 0 15px;
+		padding: 0 30px;
 		margin: 0 auto;
 		max-width: 1200px;
 
@@ -85,6 +85,7 @@ nav {
 		.nav-toggle {
 			background-color: $navbar-toggle-background;
 			border: 2px solid $navbar-toggle-border-color;
+			border-radius: $border-radius-default;
 			cursor: pointer;
 			margin-left: auto;
 			padding: 5px 10px;
@@ -102,6 +103,7 @@ nav {
 
 			.icon-bar {
 				background-color: $navbar-toggle-border-color;
+				border-radius: $border-radius-default;
 				display: block;
 				height: 2px;
 				margin: 8px 0;
@@ -176,7 +178,17 @@ nav {
 }
 
 @media(max-width: 38em) {
+	nav .nav-list {
+		padding: 0 15px;
+
+		.nav-title a {
+			font-size: 1em;
+		}
+	}
+}
+
+@media (max-width: 23em) {
 	nav .nav-list .nav-title a {
-		font-size: 1em;
+		font-size: .75em;
 	}
 }

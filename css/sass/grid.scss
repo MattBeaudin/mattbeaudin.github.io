@@ -23,27 +23,31 @@ section {
     $name: nth($breakpoint, 1);
     $size: nth($breakpoint, 2);
     $container: nth($breakpoint, 3);
-    @media only screen and (min-width: $size) {
-        .container {
-            width: $container;
-        }
-        .col-#{$name} {
-            flex-grow: 1;
-            flex-basis: 0;
-            max-width: 100%;
+
+    @for $i from 1 through $grid-columns {
+        .col-#{$name},
+        .col-#{$name}-#{$i} {
             padding: 0 15px;
         }
-        @for $i from 1 through $grid-columns {
-            .col-#{$name}-#{$i} {
-                flex-basis: 100% / $grid-columns * $i;
-                max-width: 100% / $grid-columns * $i;
-                padding: 0 15px;
+
+        @media only screen and (min-width: $size) {
+            .container {
+                width: $container;
             }
-        }
-        @for $i from 1 through $grid-columns {
-            .col-#{$name}-off-#{$i} {
-                //@include flexboxgrid-sass-col-common;
-                margin-left: 100% / $grid-columns * $i;
+            .col-#{$name} {
+                flex-grow: 1;
+                flex-basis: 0;
+                max-width: 100%;
+            }
+                .col-#{$name}-#{$i} {
+                    flex-basis: 100% / $grid-columns * $i;
+                    max-width: 100% / $grid-columns * $i;
+                }
+            @for $i from 1 through $grid-columns {
+                .col-#{$name}-off-#{$i} {
+                    //@include flexboxgrid-sass-col-common;
+                    margin-left: 100% / $grid-columns * $i;
+                }
             }
         }
     }

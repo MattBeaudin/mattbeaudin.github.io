@@ -12,6 +12,9 @@ $font-family-body: 'Raleway', sans-serif;
 $font-weight: 400;
 $line-height: 1.4;
 
+/*** Misc ***/
+$border-radius-default: 4px;
+
 /*** Icons ***/
 $icon-font-size: 4rem;
 $icon-font-color: #fff;
@@ -49,6 +52,9 @@ $navbar-title-weight: $navbar-link-weight;
 
 $navbar-toggle-border-color: #fff;
 $navbar-toggle-background: transparent;
+
+/*** Footer ***/
+$footer-height: 275px;
 
 /*** Transitions ***/
 $transition-duration: 200ms;

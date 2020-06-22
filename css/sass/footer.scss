@@ -1,7 +1,11 @@
 footer,
 .footer {
+    position: absolute;
+    left: 0;
     bottom: 0;
-    height: 40px;
-    position: fixed;
+    height: $footer-height;
     width: 100%;
+}
+
+@media (min-width: 122em) {
 }
