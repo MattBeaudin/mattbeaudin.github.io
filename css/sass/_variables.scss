@@ -1,9 +1,9 @@
 /*** Colors ***/
-$primary-color: #673AB7;
-$secondary-color: #00BCD4;
-$header-color: #263238;
-$text-color: #616161;
-$link-color: $secondary-color;
+$primary-color: #7A6DE3;
+$secondary-color: #6C5884;
+$header-color: #fff;
+$text-color: #ccc;
+$link-color: #00bcd4;
 
 /*** Font ***/
 @import url('https://fonts.googleapis.com/css?family=Nunito|Raleway');
@@ -20,10 +20,13 @@ $icon-font-size: 4rem;
 $icon-font-color: #fff;
 
 /*** Page Colors ***/
-$background-color: #fff;
-$content-background: #fff;
 $dark-font-color: #ccc;
 $dark-bg-color: #263238;
+$background-color: $dark-bg-color;
+$content-background: $dark-bg-color;
+
+/*** Card ***/
+$card-background: #313536;
 
 /*** Buttons ***/
 $button-font-size: 1rem;
@@ -54,6 +57,7 @@ $navbar-toggle-border-color: #fff;
 $navbar-toggle-background: transparent;
 
 /*** Footer ***/
+$footer-background: #313536;
 $footer-height: 275px;
 
 /*** Transitions ***/
