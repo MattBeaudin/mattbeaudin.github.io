@@ -1,6 +1,6 @@
 nav {
 	background: $navbar-background;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
 	font-family: $navbar-font-family;
 	padding: 0;
 
@@ -92,8 +92,7 @@ nav {
 			width: 75px;
 			transition: all $transition-duration ease-in-out;
 
-			&:hover,
-			&:active {
+			&:hover {
 				background-color: $navbar-toggle-border-color;
 
 				.icon-bar {

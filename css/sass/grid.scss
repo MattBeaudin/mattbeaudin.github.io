@@ -19,6 +19,12 @@ section {
     flex-wrap: wrap;
 }
 
+@media (max-width: 48em) {
+    .col {
+        width: 100%;
+    }
+}
+
 @each $breakpoint in $grid-breakpoints {
     $name: nth($breakpoint, 1);
     $size: nth($breakpoint, 2);
