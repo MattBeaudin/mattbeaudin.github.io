@@ -2,30 +2,47 @@ h1, h2, h3, h4, h5, h6 {
 	color: $header-color;
 	font-family: $font-family-header;
 	font-weight: 800;
+	letter-spacing: 0.06rem;
 }
 
 h1 {
-	font-size: 3rem;
-	margin-top: 20px;
-	margin-bottom: 30px;
-
-	&:after {
-		background: $header-color;
-		border-radius: $border-radius-default;
-		content: "";
-		display: block;
-		height: 4px;
-		width: 100%;
-	}
+	background: linear-gradient(45deg, lighten($primary-color, 17%), lighten($secondary-color, 2%));
+	color: $secondary-color;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 3.75rem;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 h2 {
+	font-size: 3rem;
 	margin-top: 15px;
-	font-size: 2rem;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 2.75rem;
+	margin-top: 15px;
+	margin-bottom: 30px;
 }
 
 h5 {
 	color: $text-color;
+}
+
+hr {
+	border: 0;
+
+	&:before {
+		content: "";
+		background: radial-gradient(circle, $primary-color, mix($secondary-color, $primary-color, 35%));
+		border-radius: $border-radius-default;
+		display: block;
+		height: 6px;
+		margin: 0 auto;
+		width: 275px;
+	}
 }
 
 label {

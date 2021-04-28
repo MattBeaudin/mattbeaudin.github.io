@@ -7,3 +7,18 @@
     display: block;
     margin: 0 auto;
 }
+
+.mt {
+    &-30 {
+        margin-top: 30px;
+    }
+    &-60 {
+        margin-top: 60px;
+    }
+}
+
+.m {
+    &-0 {
+        margin: 0;
+    }
+}

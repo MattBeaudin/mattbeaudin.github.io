@@ -1,14 +1,17 @@
 section {
-    padding: 30px 0;
+    padding: 75px 0;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 30px;
     margin-right: auto;
     margin-left: auto;
     max-width: 960px;
     width: 100%;
+}
+
+.container-small {
+    padding: 0 15px;
 }
 
 .row {
@@ -33,7 +36,7 @@ section {
     @for $i from 1 through $grid-columns {
         .col-#{$name},
         .col-#{$name}-#{$i} {
-            padding: 0 15px;
+            padding: 0;
         }
 
         @media only screen and (min-width: $size) {
