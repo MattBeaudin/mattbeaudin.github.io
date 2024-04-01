@@ -1,9 +1,9 @@
 /*** Colors ***/
-$primary-color: #3700b3;
-$secondary-color: #bb86fc;
+$primary-color: #6200ee;
+$secondary-color: #03dac6;
 $header-color: #fff;
-$text-color: #ccc;
-$link-color: #00bcd4;
+$text-color: #fff;
+$link-color: lighten($secondary-color, 15%);
 $box-shadow-small: 0 2px 6px 0 rgb(0 0 0 / 25%);
 $box-shadow-large: 0 4px 8px 0 rgb(0 0 0 / 25%);
 
@@ -22,13 +22,13 @@ $icon-font-size: 4rem;
 $icon-font-color: #fff;
 
 /*** Page Colors ***/
-$dark-font-color: #fefefe;
-$dark-bg-color: #121212;
+$dark-font-color: #fff;
+$dark-bg-color: darken(#424251, 10%);
 $background-color: $dark-bg-color;
 $content-background: $dark-bg-color;
 
 /*** Card ***/
-$card-background: mix($primary-color, $dark-bg-color, 5%);
+$card-background: linear-gradient(45deg, $primary-color, $secondary-color);
 
 /*** Buttons ***/
 $button-font-size: 1rem;

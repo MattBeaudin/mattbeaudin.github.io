@@ -2,7 +2,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: $header-color;
 	font-family: $font-family-header;
 	font-weight: 800;
-	letter-spacing: 0.06rem;
+}
+
+h1, h2, h3 {
+	letter-spacing: 0.1rem;
 }
 
 h1 {
@@ -36,7 +39,7 @@ hr {
 
 	&:before {
 		content: "";
-		background: radial-gradient(circle, $primary-color, mix($secondary-color, $primary-color, 35%));
+		background: radial-gradient(circle, $primary-color, mix($secondary-color, $primary-color, 15%));
 		border-radius: $border-radius-default;
 		display: block;
 		height: 6px;
