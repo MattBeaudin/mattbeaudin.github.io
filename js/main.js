@@ -5,10 +5,4 @@ document.addEventListener('DOMContentLoaded', function() {
 	navToggle.addEventListener('click', function(e) {
 		mobileNav.classList.toggle('nav-open');
 	}, false);
-
-	// Add tabindex to each anchor tag
-	const anchorTags = document.querySelectorAll('a');
-	anchorTags.forEach(function(anchor, i) {
-		anchor.setAttribute('tabindex', i);
-	});
 });
