@@ -5,15 +5,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.06rem;
 }
 
 h1 {
-	background: linear-gradient(45deg, lighten($primary-color, 17%), lighten($secondary-color, 2%));
+	background: linear-gradient(45deg, lighten($primary-color, 15%), lighten($secondary-color, 15%));
 	color: $secondary-color;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 3.75rem;
+	font-size: 4rem;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }

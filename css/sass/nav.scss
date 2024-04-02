@@ -121,11 +121,8 @@ nav {
 		}
 
 		.nav-item {
-			background: $navbar-background;
-			border-top: 2px solid #fff;
+			border-top: 2px solid rgba(255, 255, 255, 0.25);
 			cursor: pointer;
-			display: block;
-			padding: 10px 20px;
 
 			&.active,
 			&:focus,
@@ -135,7 +132,9 @@ nav {
 
 			a {
 				color: $navbar-link-color;
-				font-size: 2rem;
+				font-size: 1.5rem;
+				display: block;
+				padding: 10px 20px;
 			}
 		}
 	}

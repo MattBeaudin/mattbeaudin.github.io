@@ -1,13 +1,14 @@
 .card {
     background: $card-background;
     box-shadow: $box-shadow-small;
-    margin: 15px;
     transition-duration: $transition-duration;
     transition-property: all;
+    margin-right: 15px;
+    margin-bottom: 15px;
 
     &:hover {
         box-shadow: $box-shadow-large;
-        transform: translateY(-1px);
+        transform: translateY(-2px);
     }
 
     .card-img {
@@ -22,6 +23,30 @@
         color: $header-color;
         font-size: 1.25rem;
         margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.badges {
+    display: block;
+    line-height: unset;
+    margin-left: 0;
+    margin-bottom: 1rem;
+
+    li {
+        border: 1px solid #fff;
+        display: inline-block;
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 48em) {
+    .card {
+        margin-right: 0;
     }
 }
 
