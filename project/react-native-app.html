@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<script src="https://use.fontawesome.com/ffe38fe83e.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Matthew Beaudin - Portfolio</title>
+		<meta name="description" content="Matthew Beaudin's online portfolio">
+		<link rel="stylesheet" href="../css/style.min.css">
+		<link rel="shortcut icon" href="../images/icon.png" />
+	</head>
+	<body>
+		<nav>
+			<ul class="nav-list">
+				<li class="nav-title">
+					<a href="../">Matthew Beaudin</a>
+				</li>
+				<li class="nav-item nav-right">
+					<a href="../MatthewBeaudin-Resume.pdf">Resume</a>
+				</li>
+				<li class="nav-item">
+					<a href="../#contact-me">Contact</a>
+				</li>
+				<button class="nav-toggle">
+					<i class="icon-bar"></i>
+					<i class="icon-bar"></i>
+					<i class="icon-bar"></i>
+				</button>
+			</ul>
+			<ul class="mobile-list">
+				<li class="nav-item">
+					<a href="../MatthewBeaudin-Resume.pdf">Resume</a>
+				</li>
+				<li class="nav-item">
+					<a href="../#contact-me">Contact Me</a>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<div class="container">
+				<p>
+					<a href="/"><i class="fa fa-chevron-left"></i> Go Back To Landing Page</a>
+				</p>
+				<h2>React Native Radio App</h2>
+				<div class="row">
+					<div class="col col-m-7">
+						<p>
+                            My first story comes from working as a Freelance Developer. One of my clients wanted a simple mobile app made for Android and iOS. The only thing the app had was a play/pause button for a live radio show, and a list of ads. For this project I decided to use a framework called React Native, which lets you write code with JavaScript and create the front-end in an XML-like syntax called JSX. The main reason I picked this framework was because you can compile to both Android and iOS without having to write any platform specific code. 
+						</p>
+						<p>
+                            The fun begins when I receive the mockup design for the app. The mockup is simple but relies on a style similar to Material Design by Google. In our case, there’s a circular play button in the middle of the screen, surrounded by two other circles that contain a shadow which makes it look like the play button is embedded in the background. I review the design and start working on creating the backend and finally the front-end. Two weeks go by and I’m finishing up the front-end when I discover I’ve been using the wrong shadow type this entire time. I corrected it using the stylesheet and came across an awful discovery. The shadows in React Native can’t be used on circular objects, so instead of a circular shadow, there’s a rectangular shadow surrounding the circular play button.
+                        </p>
+                        <p>
+                            Naturally I panic because the deadline is approaching and I can’t find any solutions online. This wasn’t something I was expecting to not work and I had confidently said I could pull it off so I felt like I had misled the people I work with. I told the designer about the limitations of the framework and we came up with an interesting solution. I had her export all the shadows in the mockup as an SVG (Scalable Vector Graphic). With this, I could position and scale the shadows to match each phone’s viewport automatically. This was done by painstakingly going through the most common screen sizes and adding code to edit the layout if the SVG didn’t fit. While this wasn’t the most elegant solution, we didn’t have any other option if we didn’t want to compromise on the desired design. It did however prove to be an effective solution since there was no way of telling if it was a genuine shadow or an image unless you looked at the code.
+                        </p>
+                        <p>
+							This was my first "real" project using React Native so the code is a little rough but I think it gave me a strong foundation to work from.
+							I also got to experience what it's like to deal with uploading final builds to the Google Play Store and Apple App Store.
+                            This project also reminded me to pay attention to even the smallest details like a shadow in the mockup and to examine how to implement a design provided by another person far sooner than I had.
+							It also reinforced my understanding that you need to be able to do some creative problem solving from time to time.
+                        </p>
+					</div>
+					<div class="col col-m-5">
+						<div class="container-small">
+							<img class="float" alt="Original mockup" src="./images/mbn-mockup-1.jpg">
+							<p style="text-align:center;"><i>Original mockup design</i></p>
+						</div>
+						<div class="container-small">
+							<img class="float" alt="Specific screen size mockup" src="./images/mbn-mockup-2.jpg">
+							<p style="text-align:center;"><i>Mockup using iPhone layout (can't remember which iPhone)</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="contact-me">
+			<hr>
+			<div class="container">
+				<h3 class="mt-60">Contact Me</h3>
+				<div class="row">
+					<div class="col col-s-6">
+						<p>
+							Email me @ <span class="copyable">beaudinm@msu.edu</span>
+						</p>
+					</div>
+					<div class="col-s-6">
+						<a class="social-link" href="https://github.com/mattbeaudin/" aria-label="My Github"><i class="fa fa-github-square"></i></a>
+						<a class="social-link" href="https://www.linkedin.com/in/matt-beaudin/" aria-label="My LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91187449-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-91187449-1');
+		</script>
+	</body>
+</html>
