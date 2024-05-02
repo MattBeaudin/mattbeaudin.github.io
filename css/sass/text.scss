@@ -4,10 +4,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 800;
 }
 
-h1, h2, h3 {
-	letter-spacing: 0.06rem;
-}
-
 h1 {
 	background: linear-gradient(45deg, lighten($primary-color, 15%), lighten($secondary-color, 15%));
 	color: $secondary-color;
@@ -19,9 +15,19 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+h1, h2 {
+	text-align: left;
+}
+
+@media (max-width: 48em) {
+	h1, h2 {
+		text-align: center;
+	}
 }
 
 h3 {
@@ -30,17 +36,24 @@ h3 {
 	margin-bottom: 30px;
 }
 
-h5 {
+h4 {
 	color: $text-color;
+}
+
+h5 {
+	font-size: 2.25rem;
+	margin: 15px 0;
 }
 
 hr {
 	border: 0;
+	padding: 5px 0;
 
 	&:before {
 		content: "";
 		background: radial-gradient(circle, $primary-color, mix($secondary-color, $primary-color, 15%));
 		border-radius: $border-radius-default;
+		box-shadow: $box-shadow-xsmall;
 		display: block;
 		height: 6px;
 		margin: 0 auto;
